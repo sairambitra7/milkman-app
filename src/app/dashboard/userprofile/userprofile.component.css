@@ -1,0 +1,70 @@
+.mat-toolbar{
+    width: 100%;
+    height: 56px;
+    background-color:white;
+  }
+.mat-card{
+  padding: 15px;
+  margin-top: 15px;
+}
+.card-text{
+  font-size: 20px;
+    color: #d23c30;
+}
+.name{
+  font-family: Roboto;
+  font-size: 23px;
+  color: #fbbc05;
+}
+.name a{
+  cursor: pointer;
+}
+.plus{
+  color:orange;
+  float: right;
+  cursor: pointer;
+}
+.mail{
+  font-size: 13px;
+}
+.address{
+  font-size: 12px;
+  text-align: left;
+  color: gray;  
+}
+img{
+    height: 68px;
+    width: 68px;
+}
+.middle h6{
+    font-size: 14px;
+}
+.middle span{
+    font-size: 12px;
+    color: rgba(171, 164, 163, 1);
+}
+.sub h6{
+    font-size: 22px;
+}
+
+.row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.last{
+    margin-top: 59px;
+}
+.mat-form-field{
+    width: 160px;
+    height: 45px;
+    background-color: #f0c712f5;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24)
+}
+
+.addfile{
+  float: right;
+  height: 65px;
+  margin-top: 5px;
+  margin-right: 30px
+}

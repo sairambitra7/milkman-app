@@ -1,0 +1,135 @@
+<div class="users-sidenav-content">
+  <mat-toolbar>Users</mat-toolbar>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let item of result">
+      <mat-card>
+        <div class="row">
+          <div class="col-md-8 text-left prsnl">
+            <a>
+              <p class="name">{{item.name}}</p>
+            </a>
+          </div>
+          <div class="col-md-4 add">
+            <a routerLink="../personal">
+              <i class="material-icons plus">add_circle</i>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 text-left contact">
+            <p class="contact">{{item.phone}}</p>
+          </div>
+          <div class="col-md-3 text-left mail">
+            <p class="gmail">
+              <b style="margin-left: 20px">{{item.email}}</b>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-12 text-left address">
+          <p class="ads">{{item.address}}</p>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 sub">
+      <h6>
+        <b>Milk Subscription Details</b>
+      </h6>
+    </div>
+
+    <div class="col-md-6 sub1">
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <mat-card>
+        <div class="row">
+          <div class="col-md-4 image">
+            <img src="assets/images/calender/milk.png">
+          </div>
+
+          <div class="col-md-4 middle">
+            <h6>
+              <b>Full Cream Milk</b>
+            </h6>
+            <p>Hatsun</p>
+            <span>200packs 1Lit</span>
+          </div>
+          <div class="col-md-4 last">
+            <h5>
+              <b>$2000/-</b>
+            </h5>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+    <div class="col-md-4">
+      <mat-card>
+        <div class="row">
+          <div class="col-md-4 image">
+            <img src="assets/images/calender/milk.png">
+          </div>
+
+          <div class="col-md-4 middle">
+            <h6>
+              <b>Full Cream Milk</b>
+            </h6>
+            <p>Hatsun</p>
+            <span>200packs 1Lit</span>
+          </div>
+          <div class="col-md-4 last">
+            <h5>
+              <b>$2000/-</b>
+            </h5>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+
+    <div class="col-md-4">
+      <mat-card>
+        <div class="row">
+          <div class="col-md-4 image">
+            <img src="assets/images/calender/milk.png">
+          </div>
+
+          <div class="col-md-4 middle">
+            <h6>
+              <b>Full Cream Milk</b>
+            </h6>
+            <p>Hatsun</p>
+            <span>200packs 1Lit</span>
+          </div>
+          <div class="col-md-4 last">
+            <h5>
+              <b>$2000/-</b>
+            </h5>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-12 addfile">
+      <a routerLink="../products">
+        <img class="addfile" src="assets/images/users/add.png">
+      </a>
+</div>
+
+
+<router-outlet></router-outlet>

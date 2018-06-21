@@ -1,0 +1,52 @@
+<div class="users-sidenav-content">
+  <mat-toolbar>Users</mat-toolbar>
+</div>
+<div class="col-md-12 input-group">
+  <input class="form-control" placeholder="search here">
+  <button type="submit" class="btn btn-warning">search</button>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let item of cards">
+          <mat-card>
+            <div class="row">
+              <div class="col-md-8 text-left prsnl">
+                <a><p (click)="onSelect(item.id)"  class="name">{{item.name}}</p></a>
+              </div>
+              <div class="col-md-4 add">
+                <a routerLink="../personal">
+                  <i class="material-icons plus" >add_circle</i>
+                </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 text-left contact">
+                  <p class="contact">{{item.phone}}</p>
+                </div>
+                <div class="col-md-3 text-left mail">
+                  <p class="gmail"><b style="margin-left: 20px">{{item.email}}</b></p>
+                </div>
+              </div>
+                <div class="col-md-12 text-left address">
+                  <p class="ads">{{item.address}}</p>
+                </div>
+                <hr>
+                
+                <div class="row">
+                  <div class="col-md-8 text-left payment-due">
+                    <p class="card-title"><b>{{item.pay}}</b></p>
+                    <h4 class="card-text"><b>{{item.price}}</b></h4>
+                  </div>
+                </div>
+          </mat-card>
+        </div>
+    </div>
+</div>
+<div class="col-md-12 addfile">
+    <a routerLink="../userregistration">
+      <img class="addfile" src="assets/images/users/add.png">
+    </a>
+</div>
+
+
+<router-outlet></router-outlet>

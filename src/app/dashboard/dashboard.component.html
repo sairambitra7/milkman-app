@@ -1,0 +1,48 @@
+<mat-drawer-container class="nav-container">
+  <mat-drawer-container>
+    <div class="side-nav-content">
+      <i class="material-icons" (click)="drawer.toggle()">menu</i>
+    </div>
+  </mat-drawer-container>
+  <router-outlet></router-outlet>
+
+  <mat-drawer #drawer class="nav-sidenav" mode="side" opened="true">
+    <div class="logo">
+      <img src="assets/images/navbar/logowhite.svg">
+    </div>
+
+    <div class="home">
+      <div class="dashboardedit">
+        <a routerLink="home">
+          <span><mat-icon>perm_data_setting</mat-icon>
+          Dashboard</span>
+        </a>
+        <br>
+      </div>
+      
+      <div class="usersedit">
+        <a routerLink="users">
+          <span><mat-icon class="nav-menu">menu</mat-icon>
+          Users</span>
+        </a>
+        <br>
+      </div>
+
+      <div class="calenderedit">
+        <a routerLink="calender">
+          <span><mat-icon class="nav-menu">menu</mat-icon>
+          Calender</span>
+        </a>
+        <br>
+      </div>
+
+      <div class="productsedit">
+        <a routerLink="products">
+          <span><mat-icon class="nav-menu">menu</mat-icon>
+          Products</span>
+        </a>
+        <br>
+      </div>
+    </div>
+  </mat-drawer>
+</mat-drawer-container>

@@ -1,0 +1,87 @@
+<div class="calender-sidenav-content">
+    <mat-toolbar>Calender</mat-toolbar>
+</div>
+<div class="col-md-12 input-group">
+  <input class="form-control" placeholder="search">
+  <button type="submit" class="btn btn-warning">search</button>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 sub">
+      <h6>
+        <b>Milk Subscription Details</b>
+      </h6>
+    </div>
+
+    <div class="col-md-6 sub1">
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <mat-card>
+        <div class="row">
+          <div class="col-md-4 image">
+            <img src="assets/images/calender/milk.png">
+          </div>
+
+          <div class="col-md-4 middle">
+            <h6><b>Full Cream Milk</b></h6>
+            <p>Hatsun</p>
+            <span>200packs 1Lit</span>
+          </div>
+          <div class="col-md-4 last">
+            <h5><b>$2000/-</b></h5>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+    <div class="col-md-4">
+        <mat-card>
+          <div class="row">
+            <div class="col-md-4 image">
+              <img src="assets/images/calender/milk.png">
+            </div>
+  
+            <div class="col-md-4 middle">
+              <h6><b>Full Cream Milk</b></h6>
+              <p>Hatsun</p>
+              <span>200packs 1Lit</span>
+            </div>
+            <div class="col-md-4 last">
+              <h5><b>$2000/-</b></h5>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+
+      <div class="col-md-4">
+          <mat-card>
+            <div class="row">
+              <div class="col-md-4 image">
+                <img src="assets/images/calender/milk.png">
+              </div>
+    
+              <div class="col-md-4 middle">
+                <h6><b>Full Cream Milk</b></h6>
+                <p>Hatsun</p>
+                <span>200packs 1Lit</span>
+              </div>
+              <div class="col-md-4 last">
+                <h5><b>$2000/-</b></h5>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

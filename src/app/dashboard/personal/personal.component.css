@@ -1,0 +1,32 @@
+.mat-toolbar{
+    width: 100%;
+    height: 56px;
+    background-color: #ffffff;
+  }
+  .mat-card{
+    margin-top: 15px;
+  }
+.personal{
+  color: blue;
+}
+
+  .btn-primary{
+    width: 106px;
+    height: 30px;
+    background-color: #34a853;
+  }
+
+  .namefield{
+    width: 103%;
+  }
+  
+  .fieldname{
+    width: 103%;
+  }
+  .flat, .email, .community, .sub-community, .locality, .city, .state, .postalcode{
+    width: 100%;
+  }
+
+  .personal-full-width{
+    width: 100%;
+  }
